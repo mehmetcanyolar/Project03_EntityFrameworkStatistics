@@ -48,6 +48,15 @@ namespace Project03_EntityFrameworkStatistics
             var totalProductStockCount = db.TblProducts.Sum(x => x.ProductStock);
             lblProductTotalStock.Text = totalProductStockCount.ToString();
 
+            //Ortalama Ürün Fiyatı
+
+            var averageProductPrice =  db.TblProducts.Average(x => x.ProductPrice);
+            lblProductAveragePrice.Text = averageProductPrice.ToString() + " ₺";   
+
+            //Toplam Meyve Stoğu
+
+            var totalProductCountByCategoryIsFruit = db.TblProducts.Where(x=>x.CategoryId== 1).Sum(y=>y.ProductStock);
+            lblProductCountByCategoryIsFruit.Text= totalProductCountByCategoryIsFruit.ToString();
 
         }
     }

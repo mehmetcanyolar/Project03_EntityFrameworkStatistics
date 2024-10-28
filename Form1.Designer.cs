@@ -53,11 +53,11 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblProductCountByCategoryIsFruit = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblProductAveragePrice = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -322,7 +322,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(120)))));
+            this.panel8.BackColor = System.Drawing.Color.Violet;
             this.panel8.Controls.Add(this.label15);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Location = new System.Drawing.Point(456, 155);
@@ -343,48 +343,49 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(50, 33);
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Arial Black", 7F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(3, 32);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 17);
+            this.label16.Size = new System.Drawing.Size(202, 17);
             this.label16.TabIndex = 0;
-            this.label16.Text = "Müşteri Sayısı";
+            this.label16.Text = "Gazozun Toplam İşlem Hacmi";
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(131)))), ((int)(((byte)(5)))));
-            this.panel9.Controls.Add(this.label17);
+            this.panel9.Controls.Add(this.lblProductCountByCategoryIsFruit);
             this.panel9.Controls.Add(this.label18);
             this.panel9.Location = new System.Drawing.Point(241, 155);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(209, 127);
             this.panel9.TabIndex = 7;
             // 
-            // label17
+            // lblProductCountByCategoryIsFruit
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(64, 62);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 28);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "label17";
+            this.lblProductCountByCategoryIsFruit.AutoSize = true;
+            this.lblProductCountByCategoryIsFruit.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductCountByCategoryIsFruit.Location = new System.Drawing.Point(64, 62);
+            this.lblProductCountByCategoryIsFruit.Name = "lblProductCountByCategoryIsFruit";
+            this.lblProductCountByCategoryIsFruit.Size = new System.Drawing.Size(83, 28);
+            this.lblProductCountByCategoryIsFruit.TabIndex = 1;
+            this.lblProductCountByCategoryIsFruit.Text = "label17";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(50, 33);
+            this.label18.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(12, 28);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 17);
+            this.label18.Size = new System.Drawing.Size(180, 22);
             this.label18.TabIndex = 0;
-            this.label18.Text = "Ürün Sayısı";
+            this.label18.Text = "Toplam Meyve Stoğu";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(76)))), ((int)(((byte)(170)))));
             this.panel10.Controls.Add(this.label19);
-            this.panel10.Controls.Add(this.label20);
+            this.panel10.Controls.Add(this.lblProductAveragePrice);
             this.panel10.Location = new System.Drawing.Point(26, 155);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(209, 127);
@@ -400,15 +401,15 @@
             this.label19.TabIndex = 1;
             this.label19.Text = "label19";
             // 
-            // label20
+            // lblProductAveragePrice
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(50, 33);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(105, 17);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Kategori Sayısı";
+            this.lblProductAveragePrice.AutoSize = true;
+            this.lblProductAveragePrice.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductAveragePrice.Location = new System.Drawing.Point(9, 30);
+            this.lblProductAveragePrice.Name = "lblProductAveragePrice";
+            this.lblProductAveragePrice.Size = new System.Drawing.Size(184, 22);
+            this.lblProductAveragePrice.TabIndex = 0;
+            this.lblProductAveragePrice.Text = "Ortalama Ürün Fiyatı";
             // 
             // panel11
             // 
@@ -809,11 +810,11 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblProductCountByCategoryIsFruit;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblProductAveragePrice;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
