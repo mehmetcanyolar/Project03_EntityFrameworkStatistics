@@ -95,13 +95,64 @@ namespace Project03_EntityFrameworkStatistics
 
             lblOrderCountFromTurkeyByEF.Text=orderCountFromTurkiyeWithEF.ToString();
 
-            //MEYVE SATISLARI KAZANCI
+            //TOTAL MEYVE SATISLARI KAZANCI
 
             var orderTotalPriceByCategoryIsMeyve = db.Database.SqlQuery<decimal>("Select Sum(o.TotalPrice) From TblOrder o Join TblProduct p On o.ProductId = p.ProductId Join TblCategory c On p.CategoryId=c.CategoryId Where c.CategoryName='Meyve'").FirstOrDefault();
 
-            lblOrderTotalPriceByCategoryIsMeyve.Text=orderTotalPriceByCategoryIsMeyve.ToString();
-        }
+            lblOrderTotalPriceByCategoryIsMeyve.Text=orderTotalPriceByCategoryIsMeyve.ToString() + " ₺";
 
+
+            //TOTAL MEYVE SATIŞLARI EF KULLANARAK
+
+            var orderTotalPriceByCategoryIsMeyveByEF = (from o in db.TblOrders join p in db.TblProducts on o.ProductId equals p.ProductId join c in db.TblCategories on p.CategoryId equals c.CategoryId where c.CategoryName == "Meyve" select o.TotalPrice).Sum();
+
+            lblOrderTotalPriceByCategoryIsMeyveByEF.Text= orderTotalPriceByCategoryIsMeyveByEF.ToString()+" ₺";
+
+
+            //SON EKLENE URUN ADI
+
+            var lastProductName = db.TblProducts.OrderByDescending(x=>x.ProductId).Select(y=>y.ProductName).FirstOrDefault();
+
+            label21.Text=lastProductName.ToString();
+
+            //SON EKLENEN ÜRÜN KATEGORİSİ
+
+            var lastProductCategoryId = db.TblProducts.OrderByDescending(x=>x.ProductId).Select(y=>y.CategoryId).FirstOrDefault();
+            var lastProductCategoryName=db.TblCategories.Where(z=>z.CategoryId==lastProductCategoryId).Select(t=>t.CategoryName).FirstOrDefault();
+            label39.Text=lastProductCategoryName.ToString();
+
+            //AKTIF URUN SAYISI
+
+            var  productStatusActive = db.TblProducts.Where(x=>x.ProductStatus==true).Count();
+
+            label37.Text=productStatusActive.ToString();
+
+            //TOPLAM KOLA STOK SATISINDAN GELEN CIRO
+
+            var kolaStok = db.TblProducts.Where(x => x.ProductName == "Kola").Select(y=>y.ProductStock).First();
+
+            var kolaPrice = db.TblProducts.Where(x=>x.ProductName=="Kola").Select(y=>y.ProductPrice).FirstOrDefault();
+
+            var totalKolaStockPrice = kolaPrice * kolaStok;
+
+            label35.Text=totalKolaStockPrice.ToString() +" ₺";
+
+            //SON SIPARISI VEREN MUSTERININ ADI SOYADI
+
+            var customerIdByOrderId = db.TblOrders.OrderByDescending(x=>x.OrderId).Select(y=>y.CustomerId).FirstOrDefault();
+
+            var customerName= db.TblCustomers.Where(z=>z.CustomerId==customerIdByOrderId).Select(t=>t.CustomerName).First();
+
+            label33.Text=customerName.ToString();
+
+            // FARKLI ÜLKE SAYISI
+
+            var countryDifferentCount = db.TblCustomers.Select(x=>x.CustomerCountry).Distinct().Count();
+
+            label31.Text=countryDifferentCount.ToString();
+
+        }
+        
 
 
 

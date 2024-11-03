@@ -62,7 +62,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.lblOrderTotalPriceByCategoryIsMeyve = new System.Windows.Forms.Label();
@@ -468,18 +468,18 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(38, 27);
+            this.label22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(20, 28);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 15);
+            this.label22.Size = new System.Drawing.Size(107, 15);
             this.label22.TabIndex = 0;
-            this.label22.Text = "Kategori Sayısı";
+            this.label22.Text = "Son Eklenen Ürün";
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(179)))));
-            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.lblOrderTotalPriceByCategoryIsMeyveByEF);
             this.panel12.Controls.Add(this.label24);
             this.panel12.Location = new System.Drawing.Point(503, 241);
             this.panel12.Margin = new System.Windows.Forms.Padding(2);
@@ -487,27 +487,27 @@
             this.panel12.Size = new System.Drawing.Size(157, 103);
             this.panel12.TabIndex = 9;
             // 
-            // label23
+            // lblOrderTotalPriceByCategoryIsMeyveByEF
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(48, 50);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(69, 23);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "label23";
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.AutoSize = true;
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Location = new System.Drawing.Point(48, 50);
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Name = "lblOrderTotalPriceByCategoryIsMeyveByEF";
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Size = new System.Drawing.Size(69, 23);
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.TabIndex = 1;
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Text = "label23";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(38, 27);
+            this.label24.Location = new System.Drawing.Point(13, 27);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(82, 15);
+            this.label24.Size = new System.Drawing.Size(134, 15);
             this.label24.TabIndex = 0;
-            this.label24.Text = "Sipariş Sayısı";
+            this.label24.Text = "MeyveSatışKazancı(EF)";
             // 
             // panel13
             // 
@@ -541,7 +541,6 @@
             this.label26.Size = new System.Drawing.Size(144, 15);
             this.label26.TabIndex = 0;
             this.label26.Text = "Meyve Satışları Kazancı ";
-          
             // 
             // panel14
             // 
@@ -634,13 +633,13 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(38, 27);
+            this.label32.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(14, 27);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(89, 15);
+            this.label32.Size = new System.Drawing.Size(122, 17);
             this.label32.TabIndex = 0;
-            this.label32.Text = "Kategori Sayısı";
+            this.label32.Text = "Farklı Ülke Sayısı";
             // 
             // panel17
             // 
@@ -657,7 +656,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(48, 50);
+            this.label33.Location = new System.Drawing.Point(12, 50);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(69, 23);
@@ -667,13 +666,13 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(38, 27);
+            this.label34.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(13, 25);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(82, 15);
+            this.label34.Size = new System.Drawing.Size(130, 17);
             this.label34.TabIndex = 0;
-            this.label34.Text = "Sipariş Sayısı";
+            this.label34.Text = "Son Müşterinin Adı";
             // 
             // panel18
             // 
@@ -700,13 +699,13 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(38, 27);
+            this.label36.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(2, 27);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 15);
+            this.label36.Size = new System.Drawing.Size(148, 15);
             this.label36.TabIndex = 0;
-            this.label36.Text = "Müşteri Sayısı";
+            this.label36.Text = "Toplam Kola Sat. Gel.Ciro";
             // 
             // panel19
             // 
@@ -733,13 +732,13 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(38, 27);
+            this.label38.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(23, 27);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(70, 15);
+            this.label38.Size = new System.Drawing.Size(100, 15);
             this.label38.TabIndex = 0;
-            this.label38.Text = "Ürün Sayısı";
+            this.label38.Text = "Aktif Ürün Sayısı";
             // 
             // panel20
             // 
@@ -766,19 +765,19 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(38, 27);
+            this.label40.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(5, 27);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(89, 15);
+            this.label40.Size = new System.Drawing.Size(140, 15);
             this.label40.TabIndex = 0;
-            this.label40.Text = "Kategori Sayısı";
+            this.label40.Text = "Son Eklenen Ürün Kategorisi";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 505);
+            this.ClientSize = new System.Drawing.Size(1051, 631);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel18);
@@ -883,7 +882,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblOrderTotalPriceByCategoryIsMeyveByEF;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label lblOrderTotalPriceByCategoryIsMeyve;
